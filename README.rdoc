@@ -23,4 +23,4 @@ Generate a migration for something trackable.  I don't know how bad this is need
 
 ----
 
-Copyright (c) 2010 [Jake], released under the MIT license
+Copyright (c) 2010 [George Wendt], released under the MIT license
