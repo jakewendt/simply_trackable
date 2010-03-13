@@ -18,6 +18,9 @@ Generate a migration for something trackable.  I don't know how bad this is need
 
 == To Do
 
+* Add tests to ensure that it does what it should
 
+
+----
 
 Copyright (c) 2010 [Jake], released under the MIT license
