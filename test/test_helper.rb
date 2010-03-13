@@ -20,6 +20,10 @@ def setup_db
 		end
 		add_index :tracks, [:trackable_id, :trackable_type, :time], 
 			:unique => true
+		create_table :packages do |t|
+			t.string :name
+			t.string :tracking_number
+		end
 		create_table :books do |t|
 			t.string :title
 			t.string :tracking_number
@@ -36,6 +40,7 @@ end
 class Track < ActiveRecord::Base
 end
 class Package < ActiveRecord::Base
+	attr_accessible :name
 	acts_as_trackable
 end
 class Book < ActiveRecord::Base
@@ -43,5 +48,27 @@ class Book < ActiveRecord::Base
 end
 
 class ActiveSupport::TestCase
+
+	def build_track(options = {})
+		record = Track.new({
+			:name => 'track name',
+			:time => Time.now
+		}.merge(options))
+		record
+	end
+
+	def create_track(options={})
+		record = build_track(options)
+		record.save
+		record
+	end
+
+	def create_book(options = {})
+		record = Book.new({
+			:tracking_number => '123'
+		}.merge(options))
+		record.save
+		record
+	end
 
 end

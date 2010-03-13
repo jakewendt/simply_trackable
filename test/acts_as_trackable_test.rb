@@ -49,14 +49,13 @@ class ActsAsTrackableTest < ActiveSupport::TestCase
 		assert_equal 2, book.reload.tracks.length
 	end
 
-protected
-
-	def create_book(options = {})
-		record = Book.new({
-			:tracking_number => '123'
-		}.merge(options))
-		record.save
-		record
+	test "should mass assign tracking number when attr_accessible used" do
+		assert_difference 'Package.count' do
+			package = Package.new({ :tracking_number => '123' })
+			package.save
+			assert !package.new_record?, 
+				"#{package.errors.full_messages.to_sentence}"
+		end
 	end
 
 end
