@@ -40,7 +40,14 @@ class ActsAsTrackableTest < ActiveSupport::TestCase
 		end
 	end
 
-
+	test "should have many tracks" do
+		book = create_book
+		assert_equal 0, book.tracks.length
+		book.tracks.create!( :name => 'name', :time => Time.now - 10000 )
+		assert_equal 1, book.reload.tracks.length
+		book.tracks.create!( :name => 'name', :time => Time.now )
+		assert_equal 2, book.reload.tracks.length
+	end
 
 protected
 
