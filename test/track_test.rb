@@ -58,5 +58,4 @@ class TrackTest < ActiveSupport::TestCase
 		assert_equal book.reload.tracks.first.location, "my location"
 	end
 
-
 end
