@@ -39,5 +39,24 @@ class TrackTest < ActiveSupport::TestCase
 		end
 	end
 
+	test "should copy city and state to location if no location" do
+		book = create_book
+		book.tracks << create_track({
+			:city     => "Berkeley",
+			:state    => "CA"
+		})
+		assert_equal book.reload.tracks.first.location, "Berkeley, CA"
+	end
+
+	test "should NOT copy city and state to location if location given" do
+		book = create_book
+		book.tracks << create_track({
+			:location => "my location",
+			:city     => "Berkeley",
+			:state    => "CA"
+		})
+		assert_equal book.reload.tracks.first.location, "my location"
+	end
+
 
 end
