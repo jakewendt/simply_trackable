@@ -1,6 +1,7 @@
 class AddTrackingNumberTo<%= class_name.pluralize.gsub(/::/, '') -%> < ActiveRecord::Migration
 	def self.up
 		add_column :<%= file_path.gsub(/\//, '_').pluralize -%>, :tracking_number, :string
+		add_index  :<%= file_path.gsub(/\//, '_').pluralize -%>, :tracking_number, :unique => true
 	end
 
 	def self.down
