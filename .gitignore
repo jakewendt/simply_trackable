@@ -1,6 +1,8 @@
 .DS_Store
 .svn/
 versions/
+my_log_file
+db/
 db/*.sqlite3
 db/seeds.rb
 db/schema.rb
