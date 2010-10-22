@@ -14,3 +14,4 @@ config/fed_ex.yml
 public/javascripts-prototype/
 packages_updated.*
 rdoc/
+pkg/
