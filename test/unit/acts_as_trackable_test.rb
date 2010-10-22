@@ -1,14 +1,14 @@
-require File.dirname(__FILE__) + '/test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
 
 class ActsAsTrackableTest < ActiveSupport::TestCase
 
-	def setup
-		setup_db
-	end
-
-	def teardown
-		teardown_db
-	end
+#	def setup
+#		setup_db
+#	end
+#
+#	def teardown
+#		teardown_db
+#	end
 
 	test "should create book" do
 		assert_difference 'Book.count' do

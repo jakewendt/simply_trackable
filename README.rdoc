@@ -22,6 +22,29 @@ Generate a migration for something trackable.  I don't know how bad this is need
 * More tests
 
 
+
+
+== Testing (as an app)
+
+ rake db:migrate
+ rake db:fixtures:load
+ rake test
+ script/server
+
+== Gemified with Jeweler
+
+ vi Rakefile
+ rake version:write
+
+ rake version:bump:patch
+ rake version:bump:minor
+ rake version:bump:major
+
+ rake gemspec
+
+ rake install
+ rake release
+
 ----
 
 Copyright (c) 2010 [George Wendt], released under the MIT license

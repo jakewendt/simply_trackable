@@ -1,14 +1,14 @@
-require File.dirname(__FILE__) + '/test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
 
 class TrackTest < ActiveSupport::TestCase
 
-	def setup
-		setup_db
-	end
-
-	def teardown
-		teardown_db
-	end
+#	def setup
+#		setup_db
+#	end
+#
+#	def teardown
+#		teardown_db
+#	end
 
 	test "should create track" do
 		book = create_book

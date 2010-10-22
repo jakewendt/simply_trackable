@@ -21,7 +21,7 @@ module SimplyTrackable #:nodoc:
 			before_validation :nullify_blank_tracking_number
 
 		end
-		alias_method :acts_as_trackable, :simply_trackable
+		alias_method :simply_trackable, :acts_as_trackable
 	end
 
 	module InstanceMethods
