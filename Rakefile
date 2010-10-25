@@ -59,14 +59,14 @@ begin
 #
 		gem.add_dependency('i18n', '=0.3.7')
 		gem.add_dependency('rails', '~> 2')
-		gem.add_dependency('activerecord', '~> 2')
-		gem.add_dependency('activeresource', '~> 2')
-		gem.add_dependency('activesupport', '~> 2')
-		gem.add_dependency('actionmailer', '~> 2')
-		gem.add_dependency('actionpack', '~> 2')
+#		gem.add_dependency('activerecord', '~> 2')
+#		gem.add_dependency('activeresource', '~> 2')
+#		gem.add_dependency('activesupport', '~> 2')
+#		gem.add_dependency('actionmailer', '~> 2')
+#		gem.add_dependency('actionpack', '~> 2')
 #		gem.add_dependency('paperclip')
 #		gem.add_dependency('jrails')
-		gem.add_dependency('jakewendt-rails_helpers')
+		gem.add_dependency('jakewendt-simply_helpful')
 		gem.add_dependency('jakewendt-ruby_extension')
 #		gem.add_dependency('chronic')
 #		gem.add_dependency('ruby-hmac')
@@ -78,7 +78,7 @@ begin
 #		gem.add_dependency('thoughtbot-factory_girl')
 		gem.add_dependency('jakewendt-assert_this_and_that')
 		gem.add_dependency('jakewendt-calnet_authenticated')
-		gem.add_dependency('jakewendt-authorized')
+		gem.add_dependency('jakewendt-simply_authorized')
 	end
 	Jeweler::GemcutterTasks.new
 rescue LoadError
