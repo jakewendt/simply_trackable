@@ -38,6 +38,7 @@ begin
 		gem.files += FileList['generators/**/*']
 		gem.files -= FileList['**/versions/*']
 		gem.test_files = []
+#		gem.test_files -= FileList['test/test_helper.rb']
 #
 #	It would be really nice if there was a way to
 #	add a source here as ryanb-acts-as-list is on
