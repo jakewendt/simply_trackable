@@ -6,7 +6,7 @@ class SimplyTrackable::TrackTest < ActiveSupport::TestCase
 #	assert_should_create_default_object
 	assert_should_initially_belong_to(:trackable)
 	assert_should_require_attributes(:trackable_id,:name,:time)
-	assert_should_require_unique_attributes(:time)
+	assert_should_require_unique_attributes(:time,
 		:scope => [:trackable_id, :trackable_type])
 	assert_should_not_require_attributes(
 		:trackable_type,
