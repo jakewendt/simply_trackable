@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    ./script/generate simply_trackable
+
+    This will create:
+        a migration file for tracks
