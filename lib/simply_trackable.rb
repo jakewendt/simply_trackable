@@ -24,7 +24,6 @@ if !defined?(RAILS_ENV) || RAILS_ENV == 'test'
 	require 'factory_girl'
 	require 'simply_testable'
 	require 'simply_trackable/factories'
-	require 'simply_trackable/pending'
 end
 
 #ActionController::Routing::Routes.add_configuration_file(

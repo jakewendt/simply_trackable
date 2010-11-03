@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-simply_trackable}
-  s.version = "1.2.2"
+  s.version = "1.2.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
@@ -30,7 +30,6 @@ Gem::Specification.new do |s|
      "lib/simply_trackable.rb",
      "lib/simply_trackable/autotest.rb",
      "lib/simply_trackable/factories.rb",
-     "lib/simply_trackable/pending.rb",
      "lib/simply_trackable/simply_trackable.rb",
      "lib/simply_trackable/tasks.rb",
      "lib/simply_trackable/test_tasks.rb",
