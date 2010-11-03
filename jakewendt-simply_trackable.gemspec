@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-simply_trackable}
-  s.version = "1.1.0"
+  s.version = "1.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
-  s.date = %q{2010-11-01}
+  s.date = %q{2010-11-03}
   s.description = %q{longer description of your gem}
   s.email = %q{github@jake.otherinbox.com}
   s.extra_rdoc_files = [
@@ -25,6 +25,12 @@ Gem::Specification.new do |s|
      "generators/trackable_migration/templates/migration.rb",
      "generators/trackable_migration/trackable_migration_generator.rb",
      "lib/simply_trackable.rb",
+     "lib/simply_trackable/autotest.rb",
+     "lib/simply_trackable/factories.rb",
+     "lib/simply_trackable/pending.rb",
+     "lib/simply_trackable/simply_trackable.rb",
+     "lib/simply_trackable/tasks.rb",
+     "lib/simply_trackable/test_tasks.rb",
      "lib/tasks/simply_trackable_tasks.rake"
   ]
   s.homepage = %q{http://github.com/jakewendt/simply_trackable}
@@ -32,6 +38,15 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{one-line summary of your gem}
+  s.test_files = [
+    "test/app/controllers/application_controller.rb",
+     "test/app/controllers/home_controller.rb",
+     "test/app/models/book.rb",
+     "test/app/models/package.rb",
+     "test/config/routes.rb",
+     "test/unit/acts_as_trackable_test.rb",
+     "test/unit/trackable/track_test.rb"
+  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
@@ -42,23 +57,17 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<jakewendt-simply_helpful>, [">= 0"])
       s.add_runtime_dependency(%q<jakewendt-ruby_extension>, [">= 0"])
       s.add_runtime_dependency(%q<ryanb-acts-as-list>, [">= 0"])
-      s.add_runtime_dependency(%q<jakewendt-calnet_authenticated>, [">= 0"])
-      s.add_runtime_dependency(%q<jakewendt-simply_authorized>, [">= 0"])
     else
       s.add_dependency(%q<rails>, ["~> 2"])
       s.add_dependency(%q<jakewendt-simply_helpful>, [">= 0"])
       s.add_dependency(%q<jakewendt-ruby_extension>, [">= 0"])
       s.add_dependency(%q<ryanb-acts-as-list>, [">= 0"])
-      s.add_dependency(%q<jakewendt-calnet_authenticated>, [">= 0"])
-      s.add_dependency(%q<jakewendt-simply_authorized>, [">= 0"])
     end
   else
     s.add_dependency(%q<rails>, ["~> 2"])
     s.add_dependency(%q<jakewendt-simply_helpful>, [">= 0"])
     s.add_dependency(%q<jakewendt-ruby_extension>, [">= 0"])
     s.add_dependency(%q<ryanb-acts-as-list>, [">= 0"])
-    s.add_dependency(%q<jakewendt-calnet_authenticated>, [">= 0"])
-    s.add_dependency(%q<jakewendt-simply_authorized>, [">= 0"])
   end
 end
 

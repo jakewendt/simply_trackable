@@ -37,8 +37,15 @@ begin
 		gem.files += FileList['lib/**/*.rake']
 		gem.files += FileList['generators/**/*']
 		gem.files -= FileList['**/versions/*']
-		gem.test_files = []
-#		gem.test_files -= FileList['test/test_helper.rb']
+
+#
+#	I'm not quite sure if it matters whether these files
+#	are included as 'files' or 'test_files', but
+#	they need to be included if I'm gonna use'em.
+#
+		gem.test_files  = FileList['test/**/*.rb']
+		gem.test_files -= FileList['test/test_helper.rb']
+
 #
 #	It would be really nice if there was a way to
 #	add a source here as ryanb-acts-as-list is on
@@ -63,8 +70,8 @@ begin
 		gem.add_dependency('jakewendt-ruby_extension')
 		gem.add_dependency('ryanb-acts-as-list')
 #		gem.add_dependency('jakewendt-assert_this_and_that')
-		gem.add_dependency('jakewendt-calnet_authenticated')
-		gem.add_dependency('jakewendt-simply_authorized')
+#		gem.add_dependency('jakewendt-calnet_authenticated')
+#		gem.add_dependency('jakewendt-simply_authorized')
 	end
 	Jeweler::GemcutterTasks.new
 rescue LoadError

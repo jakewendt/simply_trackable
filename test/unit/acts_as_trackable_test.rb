@@ -69,4 +69,12 @@ class ActsAsTrackableTest < ActiveSupport::TestCase
 		end
 	end
 
+	def create_book(options = {})
+		record = Book.new({
+			:tracking_number => '123'
+		}.merge(options))
+		record.save
+		record
+	end
+
 end

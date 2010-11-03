@@ -11,6 +11,8 @@ class Track < ActiveRecord::Base
 	validates_presence_of :time
 	validates_uniqueness_of :time, :scope => [:trackable_id, :trackable_type]
 
+	validates_length_of :name, :city, :state, :zip, :location,
+		:maximum => 250, :allow_blank => true
 	attr_accessible :name, :time, :city, :state, :zip, :location
 
 	before_save :combine_city_and_state
