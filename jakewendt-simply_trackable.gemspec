@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-simply_trackable}
-  s.version = "1.2.5"
+  s.version = "1.2.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
-  s.date = %q{2010-11-03}
+  s.date = %q{2010-11-05}
   s.description = %q{longer description of your gem}
   s.email = %q{github@jake.otherinbox.com}
   s.extra_rdoc_files = [
@@ -20,7 +20,9 @@ Gem::Specification.new do |s|
      "config/routes.rb",
      "generators/simply_trackable/USAGE",
      "generators/simply_trackable/simply_trackable_generator.rb",
+     "generators/simply_trackable/templates/autotest_simply_trackable.rb",
      "generators/simply_trackable/templates/migration.rb",
+     "generators/simply_trackable/templates/simply_trackable.rake",
      "generators/track_migration/USAGE",
      "generators/track_migration/templates/migration.rb",
      "generators/track_migration/track_migration_generator.rb",
