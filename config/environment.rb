@@ -8,14 +8,8 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
 
-#	config.gem "jakewendt-calnet_authenticated",
-#		:lib => "calnet_authenticated"
-#
-#	config.gem "jakewendt-simply_authorized",
-#		:lib => "simply_authorized"
-
-	config.gem "thoughtbot-factory_girl",
-		:lib => "factory_girl"
+#	config.gem "thoughtbot-factory_girl",
+#		:lib => "factory_girl"
 
 	config.gem "jakewendt-simply_testable",
 		:lib => "simply_testable"

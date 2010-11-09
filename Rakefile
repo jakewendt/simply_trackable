@@ -30,7 +30,7 @@ begin
 		gem.authors = ["George 'Jake' Wendt"]
 		# gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
 
-		gem.files  = FileList['config/routes.rb']
+		gem.files	 = FileList['config/routes.rb']
 		gem.files += FileList['app/**/*.rb']
 		gem.files += FileList['app/**/*.erb']
 		gem.files += FileList['lib/**/*.rb']
@@ -43,7 +43,7 @@ begin
 #	are included as 'files' or 'test_files', but
 #	they need to be included if I'm gonna use'em.
 #
-		gem.test_files  = FileList['test/**/*.rb']
+		gem.test_files	= FileList['test/**/*.rb']
 		gem.test_files -= FileList['test/test_helper.rb']
 
 #
