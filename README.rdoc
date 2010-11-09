@@ -16,6 +16,12 @@ Generate a migration for something trackable.  I don't know how bad this is need
   script/generate trackable_migration Package
   rake db:migrate
 
+ config.gem 'jakewendt-simply_trackable',
+   :lib    => 'simply_trackable',
+   :source => 'http://rubygems.org'
+
+ script/generate simply_trackable
+
 == To Do
 
 * Add tests to ensure that it does what it should
