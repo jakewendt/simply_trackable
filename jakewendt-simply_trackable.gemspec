@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-simply_trackable}
-  s.version = "1.2.8"
+  s.version = "1.2.9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
-  s.date = %q{2010-12-06}
+  s.date = %q{2011-02-08}
   s.description = %q{longer description of your gem}
   s.email = %q{github@jake.otherinbox.com}
   s.extra_rdoc_files = [
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     "generators/trackable_migration/USAGE",
     "generators/trackable_migration/templates/migration.rb",
     "generators/trackable_migration/trackable_migration_generator.rb",
+    "lib/jakewendt-simply_trackable.rb",
     "lib/simply_trackable.rb",
     "lib/simply_trackable/autotest.rb",
     "lib/simply_trackable/factories.rb",
@@ -39,7 +40,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/jakewendt/simply_trackable}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.5.0}
   s.summary = %q{one-line summary of your gem}
   s.test_files = [
     "test/app/controllers/application_controller.rb",
@@ -52,7 +53,6 @@ Gem::Specification.new do |s|
   ]
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then

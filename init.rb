@@ -1,1 +1,1 @@
-require 'simply_trackable'
+require 'jakewendt-simply_trackable'
