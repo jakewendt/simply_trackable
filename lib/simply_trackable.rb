@@ -23,7 +23,7 @@ require 'simply_trackable/simply_trackable'
 if !defined?(RAILS_ENV) || RAILS_ENV == 'test'
 	require 'active_support/test_case'
 	require 'factory_girl'
-	require 'simply_testable'
+#	require 'simply_testable'
 	require 'simply_trackable/factories'
 end
 
