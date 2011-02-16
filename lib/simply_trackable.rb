@@ -21,7 +21,7 @@ HTML::WhiteListSanitizer.allowed_attributes.merge(%w(
 
 require 'simply_trackable/simply_trackable'
 
-if Rails.class_variable_defined?("@@configuration")
+if defined?(Rails) && Rails.env == 'test' && Rails.class_variable_defined?("@@configuration")
 	require 'active_support/test_case'
 	require 'factory_girl'
 	require 'simply_trackable/factories'
