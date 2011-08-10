@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-simply_trackable}
-  s.version = "1.3.6"
+  s.version = "1.3.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
-  s.date = %q{2011-06-01}
+  s.date = %q{2011-08-10}
   s.description = %q{longer description of your gem}
   s.email = %q{github@jake.otherinbox.com}
   s.extra_rdoc_files = [
@@ -36,7 +36,8 @@ Gem::Specification.new do |s|
     "lib/simply_trackable/simply_trackable.rb",
     "lib/simply_trackable/tasks.rb",
     "lib/simply_trackable/test_tasks.rb",
-    "lib/tasks/simply_trackable_tasks.rake"
+    "lib/tasks/simply_trackable_tasks.rake",
+    "rails/init.rb"
   ]
   s.homepage = %q{http://github.com/jakewendt/simply_trackable}
   s.require_paths = ["lib"]
